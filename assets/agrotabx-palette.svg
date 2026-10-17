@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 180" width="100%" height="auto">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .hex { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #94a3b8; }
+      .desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; fill: #cbd5e1; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="180" rx="14" fill="#0b130e" stroke="#1f4b36" stroke-width="1.2" />
+
+  <!-- 6 Palette Swatches -->
+  <!-- 1. Agro Primary Green -->
+  <g transform="translate(25, 20)">
+    <rect width="145" height="85" rx="10" fill="#16a34a" />
+    <rect y="92" width="145" height="50" rx="6" fill="#13241b" />
+    <text x="10" y="112" class="title">Agro Primary</text>
+    <text x="10" y="130" class="hex">#16A34A · 500</text>
+  </g>
+
+  <!-- 2. Agro Forest / Dark -->
+  <g transform="translate(185, 20)">
+    <rect width="145" height="85" rx="10" fill="#15803d" />
+    <rect y="92" width="145" height="50" rx="6" fill="#13241b" />
+    <text x="10" y="112" class="title">Agro Forest</text>
+    <text x="10" y="130" class="hex">#15803D · 700</text>
+  </g>
+
+  <!-- 3. Agro Neon Glow -->
+  <g transform="translate(345, 20)">
+    <rect width="145" height="85" rx="10" fill="#22c55e" />
+    <rect y="92" width="145" height="50" rx="6" fill="#13241b" />
+    <text x="10" y="112" class="title">Emerald Glow</text>
+    <text x="10" y="130" class="hex">#22C55E · 400</text>
+  </g>
+
+  <!-- 4. Harvest Amber -->
+  <g transform="translate(505, 20)">
+    <rect width="145" height="85" rx="10" fill="#d97706" />
+    <rect y="92" width="145" height="50" rx="6" fill="#281d11" />
+    <text x="10" y="112" class="title">Harvest Amber</text>
+    <text x="10" y="130" class="hex">#D97706 · Bulk</text>
+  </g>
+
+  <!-- 5. Hydro / Satellite Blue -->
+  <g transform="translate(665, 20)">
+    <rect width="145" height="85" rx="10" fill="#0284c7" />
+    <rect y="92" width="145" height="50" rx="6" fill="#10212e" />
+    <text x="10" y="112" class="title">Satellite Blue</text>
+    <text x="10" y="130" class="hex">#0284C7 · NDWI</text>
+  </g>
+
+  <!-- 6. Obsidian Tech Dark -->
+  <g transform="translate(825, 20)">
+    <rect width="150" height="85" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <rect y="92" width="150" height="50" rx="6" fill="#1e293b" />
+    <text x="10" y="112" class="title">Obsidian Slate</text>
+    <text x="10" y="130" class="hex">#0F172A · Dark</text>
+  </g>
+</svg>
+

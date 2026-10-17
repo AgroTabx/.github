@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1410" />
+      <stop offset="50%" stop-color="#0d2319" />
+      <stop offset="100%" stop-color="#08150f" />
+    </linearGradient>
+    
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <linearGradient id="accentGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Topography / Contour lines pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#22c55e" stroke-width="0.75" stroke-opacity="0.08" />
+    </pattern>
+
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base with subtle border -->
+  <rect width="1200" height="360" rx="20" fill="url(#bgGradient)" stroke="#1f4b36" stroke-width="1.5" />
+  <rect width="1200" height="360" rx="20" fill="url(#gridPattern)" />
+
+  <!-- Ambient Light Blobs -->
+  <circle cx="200" cy="180" r="160" fill="#16a34a" fill-opacity="0.15" filter="url(#glowFilter)" />
+  <circle cx="1050" cy="90" r="140" fill="#22c55e" fill-opacity="0.12" filter="url(#glowFilter)" />
+  <circle cx="900" cy="280" r="180" fill="#0284c7" fill-opacity="0.08" filter="url(#glowFilter)" />
+
+  <!-- Decorative Topographic Contour Waves -->
+  <path d="M 0 280 Q 300 220 600 270 T 1200 230 L 1200 360 L 0 360 Z" fill="#15803d" fill-opacity="0.07" />
+  <path d="M 0 310 Q 350 260 700 310 T 1200 280 L 1200 360 L 0 360 Z" fill="#22c55e" fill-opacity="0.06" />
+
+  <!-- Drone / Flight Trajectory Line Decoration (Top Right) -->
+  <g opacity="0.6">
+    <path d="M 850 120 Q 950 60 1080 100 T 1160 80" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="6,6" />
+    <circle cx="850" cy="120" r="4" fill="#22c55e" />
+    <circle cx="1080" cy="100" r="4" fill="#22c55e" />
+    <circle cx="1160" cy="80" r="5" fill="#f59e0b" />
+  </g>
+
+  <!-- Main Content Layout -->
+  <g transform="translate(90, 85)">
+    <!-- Pill Badge -->
+    <rect x="0" y="0" width="280" height="34" rx="17" fill="#1b3e2b" stroke="#22c55e" stroke-width="1.2" stroke-opacity="0.6" />
+    <circle cx="18" cy="17" r="5" fill="#22c55e">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="34" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#86efac" letter-spacing="1.5">PRECISION AGTECH ECOSYSTEM</text>
+
+    <!-- Main Title: AgroTabX -->
+    <text x="0" y="95" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="-1">
+      AgroTab<tspan fill="url(#primaryGlow)">X</tspan>
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#a7f3d0">
+      Modernización, monitoreo multiespectral y trazabilidad integral del sector agrícola
+    </text>
+
+    <!-- Key Capabilities Pills -->
+    <g transform="translate(0, 165)">
+      <!-- Pill 1: Drones & ODM -->
+      <g transform="translate(0, 0)">
+        <rect width="185" height="30" rx="8" fill="#142c20" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">🛸 Drones &amp; Fotogrametría</text>
+      </g>
+      <!-- Pill 2: Vision & AI -->
+      <g transform="translate(200, 0)">
+        <rect width="180" height="30" rx="8" fill="#142c20" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">🌱 Conteo IA &amp; Malezas</text>
+      </g>
+      <!-- Pill 3: Satellite Sentinel-2 -->
+      <g transform="translate(395, 0)">
+        <rect width="175" height="30" rx="8" fill="#142c20" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">🛰️ Sentinel-2 &amp; NDVI</text>
+      </g>
+      <!-- Pill 4: Voice & LLM -->
+      <g transform="translate(585, 0)">
+        <rect width="180" height="30" rx="8" fill="#142c20" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">🧠 Bitácora de Voz &amp; LLM</text>
+      </g>
+      <!-- Pill 5: Bulk Curing -->
+      <g transform="translate(780, 0)">
+        <rect width="175" height="30" rx="8" fill="#2d2212" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#fde68a">🔥 Estufas Bulk Curing</text>
+      </g>
+    </g>
+  </g>
+</svg>
+
